@@ -1,0 +1,295 @@
+:root {
+  --light: #fff;
+  --primery: #eeeeee;
+  --dark: rgb(44, 42, 42);
+  --box-shadow: 0 3px 10px #696969;
+}
+
+body {
+  background-color: var(--primery);
+  margin: 0;
+  color: var(--dark);
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Raleway;
+}
+
+.link {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background-color: var(--light);
+  border: 1px solid rgb(201, 196, 196);
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.link:hover {
+  background-color: rgb(199, 195, 195);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(/font/Alegreya/Alegreya-VariableFont_wght.ttf);
+}
+
+/* Header */
+
+.header-1 {
+  text-align: center;
+}
+
+.header-1 h1 {
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.paragraph-1 {
+  display: inline-block;
+  margin: 1px;
+  font-size: 1.3rem;
+}
+
+.unknown {
+  background-color: black;
+  color: white;
+  padding: 0 1rem;
+}
+
+/* Main Section */
+
+.main-section {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 0.5fr;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.image {
+  width: 100%;
+}
+
+.box-1 {
+  background-color: var(--light);
+  box-shadow: var(--box-shadow);
+}
+
+.header-2 {
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.paragraph-2 {
+  margin-right: 0;
+  font-size: 1.4rem !important;
+}
+
+.date {
+  margin-left: 0 !important;
+  opacity: 50%;
+  font-size: 1.4rem !important;
+}
+
+.box-1 p {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.box-1 a {
+  margin-left: 20px;
+}
+
+.image-1 {
+  width: 100%;
+}
+
+.comment {
+  margin-left: 650px !important;
+  margin-right: 10px;
+  color: black;
+  font-size: 1.4rem !important;
+}
+
+.number {
+  border: 1px solid black;
+  padding: 0px 12px 0px 12px;
+  color: white;
+  background-color: black;
+  font-size: 1.4rem;
+}
+
+.box-2 {
+  background-color: var(--light);
+  box-shadow: var(--box-shadow);
+  line-height: 1.5;
+}
+
+.box-2 h3 {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.box-2 p {
+  text-align: center;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+/* Info Section */
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  grid-template-areas:
+    "box-3 box-3 box-4"
+    "box-3 box-3 box-5";
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.box-3 {
+  grid-area: box-3;
+  background-color: var(--light);
+  box-shadow: var(--box-shadow);
+}
+
+.image-2 {
+  width: 100%;
+}
+
+.box-3 p {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.box-3 a {
+  margin-left: 20px;
+}
+
+.box-4 {
+  grid-area: box-4;
+  background-color: var(--light);
+  box-shadow: var(--box-shadow);
+}
+
+.header-3 {
+  margin: 0px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background-color: var(--primery);
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+}
+
+.box-4 p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.paragraph-3 {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.paragraph-4 {
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 0px !important;
+}
+
+.li-1 {
+  border-bottom: 1px solid rgb(190, 188, 188);
+  padding: 20px;
+  margin-left: 0px;
+}
+
+section li:hover {
+  background-color: rgb(177, 173, 173);
+}
+
+.image-3 {
+  height: 70px;
+  width: 70px;
+  vertical-align: top;
+}
+
+.box-5 {
+  grid-area: box-5;
+  background-color: var(--light);
+  box-shadow: var(--box-shadow);
+  margin-top: 50px;
+}
+
+.small-1 {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  font-size: 18px;
+  padding: 3px 8px;
+  margin-left: 10px;
+}
+
+.small-2 {
+  background-color: var(--primery);
+  font-size: 18px;
+  padding: 3px 8px;
+  margin: 10px;
+}
+
+.hr {
+  border: 1px solid white;
+}
+
+/* Footer */
+
+.footer {
+  background-color: rgb(94, 93, 93);
+  margin-top: 70px;
+  padding: 50px;
+}
+
+.link-2 {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 15px 30px;
+  background-color: black;
+  margin: 5px;
+}
+
+.link-2:hover {
+  background-color: rgb(151, 148, 148);
+}
+
+.link-3 {
+  opacity: 50%;
+}
+
+.footer p {
+  display: inline-block;
+  margin-top: 50px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer a {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 0px;
+}
